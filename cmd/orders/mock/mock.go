@@ -7,8 +7,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/azure-samples/dapr-store/cmd/orders/impl"
-	orderspec "github.com/azure-samples/dapr-store/cmd/orders/spec"
+	"github.com/thiago4go/dapr-store/cmd/orders/impl"
+	orderspec "github.com/thiago4go/dapr-store/cmd/orders/spec"
 )
 
 // OrderService mock

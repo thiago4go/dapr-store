@@ -11,8 +11,8 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/azure-samples/dapr-store/cmd/users/impl"
-	"github.com/azure-samples/dapr-store/cmd/users/spec"
+	"github.com/thiago4go/dapr-store/cmd/users/impl"
+	"github.com/thiago4go/dapr-store/cmd/users/spec"
 )
 
 // UserService mock

@@ -12,7 +12,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/azure-samples/dapr-store/cmd/users/mock"
+	"github.com/thiago4go/dapr-store/cmd/users/mock"
 	"github.com/go-chi/chi/v5"
 
 	"github.com/benc-uk/go-rest-api/pkg/api"

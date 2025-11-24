@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/azure-samples/dapr-store/cmd/orders/mock"
-	"github.com/azure-samples/dapr-store/cmd/orders/spec"
+	"github.com/thiago4go/dapr-store/cmd/orders/mock"
+	"github.com/thiago4go/dapr-store/cmd/orders/spec"
 	"github.com/benc-uk/go-rest-api/pkg/api"
 	"github.com/benc-uk/go-rest-api/pkg/auth"
 	"github.com/benc-uk/go-rest-api/pkg/httptester"

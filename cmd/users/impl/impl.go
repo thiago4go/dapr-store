@@ -12,7 +12,7 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/azure-samples/dapr-store/cmd/users/spec"
+	"github.com/thiago4go/dapr-store/cmd/users/spec"
 	"github.com/benc-uk/go-rest-api/pkg/env"
 
 	dapr "github.com/dapr/go-sdk/client"

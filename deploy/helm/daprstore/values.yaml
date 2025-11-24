@@ -4,9 +4,9 @@
 
 image:
   # -- Image registry, only change if you're using your own images
-  registry: ghcr.io
+  registry: docker.io
   # -- Image repository
-  repo: azure-samples/dapr-store
+  repo: thiago4go
   # -- Image tag
   tag: latest
   # -- Any pullsecrets that are required to pull the image

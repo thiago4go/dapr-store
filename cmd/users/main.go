@@ -13,8 +13,8 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/azure-samples/dapr-store/cmd/users/impl"
-	"github.com/azure-samples/dapr-store/cmd/users/spec"
+	"github.com/thiago4go/dapr-store/cmd/users/impl"
+	"github.com/thiago4go/dapr-store/cmd/users/spec"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 

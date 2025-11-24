@@ -14,9 +14,9 @@ import (
 	"math/rand"
 	"time"
 
-	cartspec "github.com/azure-samples/dapr-store/cmd/cart/spec"
-	orderspec "github.com/azure-samples/dapr-store/cmd/orders/spec"
-	productspec "github.com/azure-samples/dapr-store/cmd/products/spec"
+	cartspec "github.com/thiago4go/dapr-store/cmd/cart/spec"
+	orderspec "github.com/thiago4go/dapr-store/cmd/orders/spec"
+	productspec "github.com/thiago4go/dapr-store/cmd/products/spec"
 
 	"github.com/benc-uk/go-rest-api/pkg/env"
 	dapr "github.com/dapr/go-sdk/client"
