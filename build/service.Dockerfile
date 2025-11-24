@@ -26,7 +26,7 @@ COPY cmd/ ./cmd/
 RUN GO111MODULE=on CGO_ENABLED=$CGO_ENABLED GOOS=linux \
   go build \
   -ldflags "-X main.version=$VERSION -X 'main.buildInfo=$BUILD_INFO'" \
-  -o server github.com/azure-samples/dapr-store/cmd/${SERVICE_NAME}
+  -o server github.com/thiago4go/dapr-store/cmd/${SERVICE_NAME}
 
 # ================================================================================================
 # === Stage 2: Get server binary into a lightweight container ====================================

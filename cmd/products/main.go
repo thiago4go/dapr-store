@@ -157,7 +157,7 @@ func initializeProducts(service spec.ProductService) error {
 		product := spec.Product{
 			ID:          parts[0],
 			Name:        parts[1],
-			Cost:        cost,
+			Cost:        float32(cost),
 			Description: parts[3],
 			Image:       parts[4],
 			OnOffer:     onOffer,
