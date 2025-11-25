@@ -16,6 +16,15 @@ auth:
   # -- Set this to enable authentication, leave unset to run in demo mode
   clientId:
 
+azure:
+  # -- Azure OpenAI configuration for AI-generated product descriptions
+  openai:
+    endpoint: ""
+    deployment: "gpt-4o-mini"
+  # -- Managed Identity for Azure OpenAI access
+  managedIdentity:
+    clientId: ""
+
 ingress:
   # -- Ingress host DNS name
   host:

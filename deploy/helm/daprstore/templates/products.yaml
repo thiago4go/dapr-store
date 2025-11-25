@@ -34,11 +34,19 @@ spec:
         image: {{ .Values.image.registry }}/{{ .Values.image.repo }}/products:{{ .Values.image.tag }}
         imagePullPolicy: Always
 
-        {{- if .Values.auth.clientId }}
         env:
+          {{- if .Values.auth.clientId }}
           - name: AUTH_CLIENT_ID
             value: {{ .Values.auth.clientId }}
-        {{- end }} 
+          {{- end }}
+          {{- if .Values.azure.openai.endpoint }}
+          - name: AZURE_OPENAI_ENDPOINT
+            value: {{ .Values.azure.openai.endpoint }}
+          - name: AZURE_OPENAI_DEPLOYMENT
+            value: {{ .Values.azure.openai.deployment }}
+          - name: AZURE_CLIENT_ID
+            value: {{ .Values.azure.managedIdentity.clientId }}
+          {{- end }} 
 
         resources:
         {{- with .Values.resources }}

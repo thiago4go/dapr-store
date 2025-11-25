@@ -95,7 +95,11 @@ func main() {
 			// Initialize cache if using Dapr
 			if daprSvc, ok := service.(*impl.DaprProductService); ok {
 				api.aiCache = ai.NewCache(daprSvc.GetDaprClient())
-				log.Println("### AI client and cache initialized")
+				log.Println("### AI client and cache initialized (Dapr)")
+			} else {
+				// Use in-memory cache for SQLite mode
+				api.aiCache = ai.NewMemoryCache()
+				log.Println("### AI client and cache initialized (in-memory)")
 			}
 		}
 	}
