@@ -19,7 +19,7 @@ spec:
       annotations:
         dapr.io/enabled: "true"
         dapr.io/app-id: "products"
-        dapr.io/app-port: "9002"
+        dapr.io/app-port: "9000"
       {{- with .Values.products.annotations }}
           {{- toYaml . | nindent 8 }}
       {{- end }}            
@@ -48,7 +48,7 @@ spec:
         readinessProbe:
           httpGet:
             path: /health
-            port: 9002
+            port: 9000
             httpHeaders:
               - name: "No-Log"
                 value: "true"
